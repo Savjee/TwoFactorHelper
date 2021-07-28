@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2526ED3526B098D700A56A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526ED3426B098D700A56A15 /* AppDelegate.swift */; };
+		2526ED3826B098D700A56A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2526ED3626B098D700A56A15 /* Main.storyboard */; };
+		2526ED3A26B098D700A56A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526ED3926B098D700A56A15 /* ViewController.swift */; };
+		2526ED3C26B098D800A56A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2526ED3B26B098D800A56A15 /* Assets.xcassets */; };
+		2526ED4326B098D800A56A15 /* TwoFactorHelper Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2526ED4226B098D800A56A15 /* TwoFactorHelper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2526ED4826B098D800A56A15 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2526ED4726B098D800A56A15 /* Cocoa.framework */; };
+		2526ED4B26B098D800A56A15 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526ED4A26B098D800A56A15 /* SafariWebExtensionHandler.swift */; };
+		2526ED5226B098D800A56A15 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 2526ED5126B098D800A56A15 /* manifest.json */; };
+		2526ED5626B098D800A56A15 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 2526ED5526B098D800A56A15 /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2526ED4426B098D800A56A15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2526ED2826B098D700A56A15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2526ED4126B098D800A56A15;
+			remoteInfo = "TwoFactorHelper Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2526ED6426B098D800A56A15 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2526ED4326B098D800A56A15 /* TwoFactorHelper Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2526ED3026B098D700A56A15 /* TwoFactorHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoFactorHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2526ED3326B098D700A56A15 /* TwoFactorHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwoFactorHelper.entitlements; sourceTree = "<group>"; };
+		2526ED3426B098D700A56A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2526ED3726B098D700A56A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2526ED3926B098D700A56A15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2526ED3B26B098D800A56A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2526ED3D26B098D800A56A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2526ED4226B098D800A56A15 /* TwoFactorHelper Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TwoFactorHelper Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2526ED4726B098D800A56A15 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2526ED4A26B098D800A56A15 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		2526ED5126B098D800A56A15 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		2526ED5526B098D800A56A15 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		2526ED5D26B098D800A56A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2526ED5E26B098D800A56A15 /* TwoFactorHelper_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwoFactorHelper_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2526ED2D26B098D700A56A15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2526ED3F26B098D800A56A15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2526ED4826B098D800A56A15 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2526ED2726B098D700A56A15 = {
+			isa = PBXGroup;
+			children = (
+				2526ED3226B098D700A56A15 /* TwoFactorHelper */,
+				2526ED4926B098D800A56A15 /* TwoFactorHelper Extension */,
+				2526ED4626B098D800A56A15 /* Frameworks */,
+				2526ED3126B098D700A56A15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2526ED3126B098D700A56A15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2526ED3026B098D700A56A15 /* TwoFactorHelper.app */,
+				2526ED4226B098D800A56A15 /* TwoFactorHelper Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2526ED3226B098D700A56A15 /* TwoFactorHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2526ED3326B098D700A56A15 /* TwoFactorHelper.entitlements */,
+				2526ED3426B098D700A56A15 /* AppDelegate.swift */,
+				2526ED3626B098D700A56A15 /* Main.storyboard */,
+				2526ED3926B098D700A56A15 /* ViewController.swift */,
+				2526ED3B26B098D800A56A15 /* Assets.xcassets */,
+				2526ED3D26B098D800A56A15 /* Info.plist */,
+			);
+			path = TwoFactorHelper;
+			sourceTree = "<group>";
+		};
+		2526ED4626B098D800A56A15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2526ED4726B098D800A56A15 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2526ED4926B098D800A56A15 /* TwoFactorHelper Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2526ED4A26B098D800A56A15 /* SafariWebExtensionHandler.swift */,
+				2526ED5D26B098D800A56A15 /* Info.plist */,
+				2526ED5E26B098D800A56A15 /* TwoFactorHelper_Extension.entitlements */,
+				2526ED4C26B098D800A56A15 /* Resources */,
+			);
+			path = "TwoFactorHelper Extension";
+			sourceTree = "<group>";
+		};
+		2526ED4C26B098D800A56A15 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2526ED5126B098D800A56A15 /* manifest.json */,
+				2526ED5526B098D800A56A15 /* content.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2526ED2F26B098D700A56A15 /* TwoFactorHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2526ED6526B098D800A56A15 /* Build configuration list for PBXNativeTarget "TwoFactorHelper" */;
+			buildPhases = (
+				2526ED2C26B098D700A56A15 /* Sources */,
+				2526ED2D26B098D700A56A15 /* Frameworks */,
+				2526ED2E26B098D700A56A15 /* Resources */,
+				2526ED6426B098D800A56A15 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2526ED4526B098D800A56A15 /* PBXTargetDependency */,
+			);
+			name = TwoFactorHelper;
+			productName = TwoFactorHelper;
+			productReference = 2526ED3026B098D700A56A15 /* TwoFactorHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2526ED4126B098D800A56A15 /* TwoFactorHelper Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2526ED6126B098D800A56A15 /* Build configuration list for PBXNativeTarget "TwoFactorHelper Extension" */;
+			buildPhases = (
+				2526ED3E26B098D800A56A15 /* Sources */,
+				2526ED3F26B098D800A56A15 /* Frameworks */,
+				2526ED4026B098D800A56A15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TwoFactorHelper Extension";
+			productName = "TwoFactorHelper Extension";
+			productReference = 2526ED4226B098D800A56A15 /* TwoFactorHelper Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2526ED2826B098D700A56A15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					2526ED2F26B098D700A56A15 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					2526ED4126B098D800A56A15 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 2526ED2B26B098D700A56A15 /* Build configuration list for PBXProject "TwoFactorHelper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2526ED2726B098D700A56A15;
+			productRefGroup = 2526ED3126B098D700A56A15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2526ED2F26B098D700A56A15 /* TwoFactorHelper */,
+				2526ED4126B098D800A56A15 /* TwoFactorHelper Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2526ED2E26B098D700A56A15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2526ED3C26B098D800A56A15 /* Assets.xcassets in Resources */,
+				2526ED3826B098D700A56A15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2526ED4026B098D800A56A15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2526ED5226B098D800A56A15 /* manifest.json in Resources */,
+				2526ED5626B098D800A56A15 /* content.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2526ED2C26B098D700A56A15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2526ED3A26B098D700A56A15 /* ViewController.swift in Sources */,
+				2526ED3526B098D700A56A15 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2526ED3E26B098D800A56A15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2526ED4B26B098D800A56A15 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2526ED4526B098D800A56A15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2526ED4126B098D800A56A15 /* TwoFactorHelper Extension */;
+			targetProxy = 2526ED4426B098D800A56A15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2526ED3626B098D700A56A15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2526ED3726B098D700A56A15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2526ED5F26B098D800A56A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2526ED6026B098D800A56A15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2526ED6226B098D800A56A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TwoFactorHelper Extension/TwoFactorHelper_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KN76H2AC7V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "TwoFactorHelper Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = be.savjee.TwoFactorHelper.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2526ED6326B098D800A56A15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TwoFactorHelper Extension/TwoFactorHelper_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KN76H2AC7V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "TwoFactorHelper Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = be.savjee.TwoFactorHelper.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2526ED6626B098D800A56A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TwoFactorHelper/TwoFactorHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KN76H2AC7V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TwoFactorHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = be.savjee.TwoFactorHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2526ED6726B098D800A56A15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TwoFactorHelper/TwoFactorHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KN76H2AC7V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TwoFactorHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = be.savjee.TwoFactorHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2526ED2B26B098D700A56A15 /* Build configuration list for PBXProject "TwoFactorHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2526ED5F26B098D800A56A15 /* Debug */,
+				2526ED6026B098D800A56A15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2526ED6126B098D800A56A15 /* Build configuration list for PBXNativeTarget "TwoFactorHelper Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2526ED6226B098D800A56A15 /* Debug */,
+				2526ED6326B098D800A56A15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2526ED6526B098D800A56A15 /* Build configuration list for PBXNativeTarget "TwoFactorHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2526ED6626B098D800A56A15 /* Debug */,
+				2526ED6726B098D800A56A15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2526ED2826B098D700A56A15 /* Project object */;
+}
