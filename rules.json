@@ -1,0 +1,8 @@
+{
+	"rules": [
+		{
+            "match": ["https://dash.cloudflare.com/two-factor"],
+            "selector": "input[name='twofactor_token']"
+        }
+	]
+}
